@@ -1,8 +1,14 @@
 import './index.css';
-import Login from './components/Login';
-import Signup from './components/Signup';
-import VerifyOtp from './components/verifyOtp';
-import Home from './components/Home';
+import Login from './components/login/Login';
+import Signup from './components/login/Signup';
+import VerifyOtp from './components/login/verifyOtp';
+import Home from './components/home/Home';
+import Loan from './components/loan/Loan';
+import Loanrequest from './components/loan/loanrequest/Loanrequest';
+import Otp from './components/Otp';
+import Form1 from './components/loan/loanrequest/loanform/Form1';
+import Form2 from './components/loan/loanrequest/loanform/Form2';
+import Form3 from './components/loan/loanrequest/loanform/Form3';
 import { Route,Routes } from 'react-router-dom';
 
 function App() {
@@ -11,7 +17,13 @@ function App() {
       <Route path='/login' element={<Login/>}/>
       <Route path='/signup' element={<Signup/>}/>
       <Route path='/verifyotp' element={<VerifyOtp/>}/>
+      <Route path='/otp' element={<Otp/>}/>
       <Route path='/home' element={<Home/>}/>
+      <Route path='/loan' element={<Loan/>}/>
+      <Route path='/Loanrequest' element={<Loanrequest/>}/>
+      <Route path='/form1' element={<Form1/>}/>
+      <Route path='/form2' element={<Form2/>}/>
+      <Route path='/form3' element={<Form3/>}/>
     </Routes>
   );
 }
