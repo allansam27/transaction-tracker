@@ -9,8 +9,10 @@ import Otp from './components/Otp';
 import Form1 from './components/loan/loanrequest/loanform/Form1';
 import Form2 from './components/loan/loanrequest/loanform/Form2';
 import Form3 from './components/loan/loanrequest/loanform/Form3';
-import { Route,Routes } from 'react-router-dom';
 
+import { Route,Routes } from 'react-router-dom';
+import Lendform1 from './components/loan/Lendloan/Lendform1';
+import List from './components/loan/Loanlisting/List';
 function App() {
   return (
     <Routes>
@@ -24,6 +26,8 @@ function App() {
       <Route path='/form1' element={<Form1/>}/>
       <Route path='/form2' element={<Form2/>}/>
       <Route path='/form3' element={<Form3/>}/>
+      <Route path="/lendform1" element={<Lendform1/>}/>
+      <Route path="/List" element={<List/>}/>
     </Routes>
   );
 }

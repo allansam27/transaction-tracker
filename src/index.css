@@ -74,6 +74,18 @@ body{
   border: none;
   cursor: pointer;
 }
+div button{
+  font-size: 100%;
+  margin-top: 10px;
+  margin-left: 35px;
+  background-color: #000000;
+  height: 40px;
+  width: 130px;
+  border-radius: 30px;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
 body {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -86,7 +98,7 @@ form {
   padding: 10px;
   justify-content: center;
 }
-.container input[type=text], input[type=password] ,input[type=date]{
+.container input[type=text], input[type=password] ,input[type=date],input[type=number],input[type=text],input[type=text]{
   width: 100%;
   padding: 12px 20px;
   margin: 15px 0px;
@@ -112,23 +124,32 @@ form {
   opacity: 0.8;
 }
 .signupPage{
-  height: 500px;
+  height: 450px;
   width:400px;
   border-radius: 20px;
   background-color: #c0c0c0;
   overflow: scroll;
   scroll-margin: 10px;
-  overflow-x: hidden;
+  overflow-x: auto;
+  border-top-right-radius:0px ;
+  border-bottom-right-radius: 0px;
 }
 .signupPage::-webkit-scrollbar{
-  border-radius: 30px;
+  width: 10px;
+  height: auto;
+  border-radius: 20px;
 }
 .signupPage::-webkit-scrollbar-track{
-  height: 200px;
+  height: 150px;
+  box-shadow: inset 0 0 5px rgb(153, 153, 153); 
 }
 .signupPage::-webkit-scrollbar-thumb{
-  background-color: #ffffff;
-  border-radius: 30px;
+  border-radius: 20px;
+}
+.signupPage::-webkit-scrollbar-thumb:hover{
+  background-color: #716d6d;
+  border-radius: 20px;
+
 }
 .signupPage h1{
   text-align: center;
@@ -147,6 +168,7 @@ form {
   flex-flow: column;
   align-items: center;
   justify-content: center;
+
 }
 .userInput {
   display: flex;
@@ -200,6 +222,9 @@ form {
   color: #ffffff;
   background-color: #000000;
 }
+.navButtons p:active{
+  background-color: #a44f4f;
+}
 .navButtons p{
   margin: 0px;
   margin-left: 10px;
@@ -208,6 +233,12 @@ form {
   border-radius: 10px;
   font-size: 20px;
   padding: 10px;
+}
+.navicons{
+  margin-left: 60px;
+}
+.navtext{
+  margin-left: 60px;
 }
 .navButtons p:hover{
   background-color: #989898;
@@ -356,7 +387,8 @@ form {
 .formLoan input{
   height: 30px;
   width:90%;
-  margin-bottom: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
   border-radius: 3px;
 }
 .loanButton{

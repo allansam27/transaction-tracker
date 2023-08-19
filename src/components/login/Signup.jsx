@@ -22,7 +22,7 @@ function Signup(props){
                             <input type="date" placeholder="Enter DOB" name="dob" required/>
 
                             <label for="number" style={{marginLeft:"10px",fontSize:"120%"}}><b>Phone</b></label>
-                            <input type="number" placeholder="Enter Phone Number " name="number" required/>
+                            <input type="number" placeholder="Enter Phone Number" name="number" required/>
 
                             <label for="city" style={{marginLeft:"10px",fontSize:"120%"}}><b>City</b></label>
                             <input type="text" placeholder="Enter City" name="city" required/>

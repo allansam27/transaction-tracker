@@ -8,14 +8,12 @@ function VerifyOtp(props){
         <div className="leftPage">
             <img src="loginpagegif.gif"></img>
         </div>
-        <div className="rightPage">
-            <div className="verOtpCont" >
-                <Otp/>
-                <div>
-                <button type="submit" onClick={()=>navigate('/home')}>Signup</button>
+            <div className="rightPage">
+                <div className="verOtpCont" >
+                    <Otp/>
+  
                 </div>
             </div>
-        </div>
        </div>
     )
 };

@@ -9,22 +9,19 @@ function Navbar(){
         <div className="navBar">
             <div className="logo">
                 <br></br> 
-                <p>Penny</p>
-                <p>Pincher</p>
+                <p>Penny Pincher</p>
             </div>
             <div className="navButtons">
-                <br></br>
-                <br></br>
-                <p onClick={()=>navigate('/home')}><i class="fa-solid fa-house"></i> Home</p>
-                <p onClick={()=>navigate('../loanrequest')}><i class="fa-solid fa-landmark"></i> Loan</p>
-                <p><i class="fa-solid fa-circle-up"></i> Payable</p>
-                <p><i class="fa-solid fa-circle-down"></i> Recievable</p>
-                <p><i class="fa-solid fa-credit-card"></i> Payment</p>
-                <p><i class="fa-solid fa-user"></i> Account</p>
+                <p onClick={()=>navigate('/home')}><i class="fa-solid fa-house navicons"></i> Home</p>
+                <p onClick={()=>navigate('../loanrequest')}><i class="fa-solid fa-landmark navicons"></i> Loan</p>
+                <p><i class="fa-solid fa-circle-up navicons"></i> Payable</p>
+                <p><i class="fa-solid fa-circle-down navicons"></i> Recievable</p>
+                <p><i class="fa-solid fa-credit-card navicons"></i> Payment</p>
+                <p><i class="fa-solid fa-user navicons"></i> Account</p>
             </div>
             <div className="settings">
-                <p><i className="fa-solid fa-gear"></i>     Settings</p>
-                <p onClick={()=>navigate('/login')}><i class="fa-solid fa-arrow-right-from-bracket"></i> Logout</p>
+                <p><i className="fa-solid fa-gear navicons"></i> Settings</p>
+                <p onClick={()=>navigate('/login')}><i class="fa-solid fa-arrow-right-from-bracket navicons"></i> Logout</p>
             </div>
         </div>
     )
